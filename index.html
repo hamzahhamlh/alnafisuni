@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الرد التلقائي على الأسئلة</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="category-suggestions">
+      <h3>اقتراحات الفئات:</h3>
+      <div id="categories-list"></div>
+
+      <div id="questions-container" style="display:none;">
+        <h3>الأسئلة في هذه الفئة:</h3>
+        <ul id="questions-list"></ul>
+      </div>
+    </div>
+
+    <div class="chat-container">
+      <h1>استعلام عن جامعة ابن النفيس</h1>
+      <div id="messages"></div>
+
+      <form id="question-form" onsubmit="return handleSubmit();">
+        <input type="text" id="question-input" name="question" placeholder="أدخل سؤالك هنا" required>
+        <button type="submit">إرسال</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
